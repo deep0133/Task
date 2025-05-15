@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+html {
+  font-size: 16px;
+}
+
+@utility inner_responsiveWidth {
+  @apply px-3 sm:px-5 lg:px-0 w-full md:w-[94%] lg:w-[92%] 2xl:w-[90%] max-w-[120rem] mx-auto;
+}
+
+@theme {
+  --breakpoint-2xl: 100rem;
+  --breakpoint-3xl: 120rem;
+}
+
+.font-Manrope {
+  font-family: "Manrope", sans-serif;
+}
+
+.font-Rethink_Sans {
+  font-family: "Rethink Sans", sans-serif;
+}
+
+.about-bg-img {
+  background-image: url("../src/assets/jpg/design.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.font-plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply as Tailwind utility classes */
+.animate-slide-left {
+  animation: slideLeft 0.5s ease-out;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.5s ease-out;
+}
