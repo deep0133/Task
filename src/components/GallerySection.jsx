@@ -1,5 +1,7 @@
 import { FaArrowRight } from "react-icons/fa";
-import HouseImage from "../assets/jpg/house.png";
+import g1 from "../assets/jpg/g1.png";
+import g2 from "../assets/jpg/g2.png";
+import g3 from "../assets/jpg/g3.png";
 import Title from "./Title";
 
 const GallerySection = () => {
@@ -10,10 +12,6 @@ const GallerySection = () => {
         <div className='self-stretch justify-start text-[#365272] text-[1.3rem] font-semibold font-plus-jakarta-sans leading-[25.20px]'>
           [Gallery]
         </div>
-        {/* <p className='text-sm text-gray-500 font-medium'>[Gallery]</p> */}
-        {/* <div className='self-stretch justify-start text-[#365272] text-[28px] sm:text-3xl md:text-4xl lg:text-[44px] xl:text-[55px] 2xl:text-[64px] font-semibold font-plus-jakarta-sans leading-10 md:leading-[48px] lg:leading-[54px] xl:leading-[64px] 2xl:leading-[76.80px]'>
-          Designed for Luxury, Comfort, and Unmatched Serenity
-        </div> */}
         <Title
           title='Designed for Luxury, Comfort, and Unmatched Serenity'
           classNames='text-[#365272] font-medium'
@@ -40,17 +38,17 @@ const GallerySection = () => {
       {/* Right Gallery */}
       <div className='lg:col-span-3 grid grid-cols-2 grid-rows-2 gap-4'>
         <img
-          src={HouseImage}
+          src={g1}
           alt='house1'
           className='w-full h-[191.40px] lg:w-[500px] lg:h-[444px] rounded-[25px] object-cover'
         />
         <img
-          src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c'
+          src={g2}
           alt='house2'
           className='w-full h-[191.40px] lg:w-[500px] lg:h-[444px] rounded-[25px] object-cover'
         />
         <img
-          src='https://images.unsplash.com/photo-1570129477492-45c003edd2be'
+          src={g3}
           alt='house3'
           className='col-span-2 w-full h-[191.40px] lg:w-[994px] lg:h-[444px] rounded-[25px] object-cover'
         />

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { FaArrowLeft, FaArrowRight, FaStar } from "react-icons/fa";
-import houseImage from "../assets/jpg/pool.png";
+import client1 from "../assets/jpg/client1.png";
 import Title from "./Title";
 
 const testimonials = [
@@ -9,21 +9,21 @@ const testimonials = [
     feedback:
       "Rvi made selling my house easy and stress-free. The team handled everything from start to finish, and I got a great offer!",
     stars: 5,
-    image: houseImage,
+    image: client1,
   },
   {
     name: "JASON PARK",
     feedback:
       "We found our dream home with dvgs help. Their agents were incredibly knowledgeable and guided us",
     stars: 5,
-    image: houseImage,
+    image: client1,
   },
   {
     name: "ADELINE CHEN",
     feedback:
       "I’ve been renting my apartment through dgb for years. They’re responsive and always make sure my property is taken care of.",
     stars: 5,
-    image: houseImage,
+    image: client1,
   },
 ];
 
@@ -48,8 +48,8 @@ const TestimonialSlider = () => {
   ];
 
   return (
-    <div className='bg-[#f9fafb] py-10 inner_responsiveWidth'>
-      <div className='flex justify-between items-center mb-6'>
+    <div className='bg-[#f9fafb] border-none my-5 py-10 inner_responsiveWidth'>
+      <div className='flex justify-between items-center mb-3 lg:mb-6'>
         <Title title={"Words from Our Clients"} />
         <div className='flex gap-2'>
           <button
@@ -69,7 +69,7 @@ const TestimonialSlider = () => {
 
       <div
         key={startIndex} // triggers remount
-        className={`flex gap-4 transition-all overflow-hidden duration-500 ease-in-out ${
+        className={`flex gap-4 transition-all py-4 overflow-hidden duration-500 ease-in-out ${
           direction === "right" ? "animate-slide-left" : "animate-slide-right"
         }`}
       >

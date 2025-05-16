@@ -1,30 +1,33 @@
-import CyprusImage from "../assets/jpg/cyprus.png";
+import CyprusImage1 from "../assets/jpg/c1.png";
+import CyprusImage2 from "../assets/jpg/c2.png";
+import CyprusImage3 from "../assets/jpg/c3.png";
+import CyprusImage4 from "../assets/jpg/c4.png";
 import BtnImage from "../assets/jpg/btnImage.png";
 import Title from "./Title";
 
 const properties = [
   {
     id: 1,
-    img: CyprusImage,
+    img: CyprusImage1,
   },
   {
     id: 2,
-    img: CyprusImage,
+    img: CyprusImage2,
   },
   {
     id: 3,
-    img: CyprusImage,
+    img: CyprusImage3,
   },
   {
     id: 4,
-    img: CyprusImage,
+    img: CyprusImage4,
   },
 ];
 
 const PropertiesInCyprus = () => {
   return (
     <section className='inner_responsiveWidth py-12 bg-white'>
-      <div className='flex justify-between flex-wrap gap-3 sm:items-center md:mb-12'>
+      <div className='flex justify-between flex-wrap gap-3 sm:items-center mb-5 md:mb-12'>
         <Title title={"Properties in Cyprus"} />
 
         <button className='px-[26px] py-3 bg-[#365272] rounded-[35px] inline-flex justify-center items-center text-[#f8f9fa] text-[0.69rem] lg:text-lg font-semibold font-font-plus-jakarta-sans lg:leading-[25.20px]'>

@@ -46,7 +46,7 @@ const NewsAndInsights = () => {
 
   return (
     <div className='inner_responsiveWidth mx-auto px-4 py-12'>
-      <div className='flex lg:justify-center lg:mb-16'>
+      <div className='flex lg:justify-center mb-8 lg:mb-16'>
         <Title title={"Latest News and Insights"} />
       </div>
 

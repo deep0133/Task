@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
 import { IoIosArrowRoundBack, IoLogoYoutube } from "react-icons/io";
-import { FaWhatsapp } from "react-icons/fa";
 import HomeImage from "../assets/jpg/home.png";
-import Title from "./Title";
+import WhatsappImage from "../assets/jpg/wa.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 export default function Navbar() {
   const [menu, setMenu] = useState(false);
@@ -119,14 +118,14 @@ const HeroSection = () => {
         </div>
       </div>
       {/* WhatsApp Button */}
-      <div className='absolute inset-y-0 right-2 z-50 flex justify-center items-center'>
+      <div className='absolute inset-y-0 right-1 z-50 flex justify-center items-center'>
         <a
           href='https://wa.me/1234567890'
           target='_blank'
-          className=' bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors'
+          className='  text-white p-4 rounded-full shadow-lg transition-colors'
           aria-label='Contact us on WhatsApp'
         >
-          <FaWhatsapp className='text-2xl' />
+          <img src={WhatsappImage} className='' />
         </a>
       </div>
     </div>
